@@ -53,7 +53,7 @@ public class StartFrame extends JFrame {
 		
 		//1. Proceso de carga de datos al JTable.
 		DefaultTableModel mo = new DefaultTableModel();
-		mo.addColumn("C�digo");
+		mo.addColumn("Código");
 		mo.addColumn("Nombre");
 		Object []fila = new Object[2];
 		
@@ -84,11 +84,11 @@ public class StartFrame extends JFrame {
 					return;
 				if (e.isPopupTrigger() && e.getComponent() instanceof JTable ) {
 					JPopupMenu pm = new JPopupMenu(); //Aca se crea el PopUp (La ventana).
-					JMenuItem mi = new JMenuItem("Agregar", new ImageIcon("Imagenes/add.png")); //Aca se crea un JMenuItem (Para luego a�adirlo al PopUp).
+					JMenuItem mi = new JMenuItem("Agregar", new ImageIcon("Imagenes/add.png")); //Aca se crea un JMenuItem (Para luego añadirlo al PopUp).
 			   
-					mi.addActionListener(f -> ejecutar(f)); //Aca se le a�ade el listener al JMenuItem.
+					mi.addActionListener(f -> ejecutar(f)); //Aca se le añade el listener al JMenuItem.
 			   
-					pm.add(mi); //Aca se le a�ade el JMenuItem al PopUp.
+					pm.add(mi); //Aca se le añade el JMenuItem al PopUp.
 				   
 					pm.show(e.getComponent(), e.getX(), e.getY());
 			   }
@@ -96,7 +96,7 @@ public class StartFrame extends JFrame {
 		});	
 	}
 	
-	private void ejecutar(ActionEvent e) { //Aca se ejecuta el c�digo correspondiente al JMenuItem seleccionado (La idea es usar los datos de la fila seleccionada).
+	private void ejecutar(ActionEvent e) { //Aca se ejecuta el código correspondiente al JMenuItem seleccionado (La idea es usar los datos de la fila seleccionada).
 		JOptionPane.showMessageDialog(null, "Le diste click a 'Agregar'");
 	}
 }
