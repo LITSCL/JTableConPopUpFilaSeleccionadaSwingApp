@@ -15,7 +15,6 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.JTable;
 
 public class StartFrame extends JFrame {
-
 	private JPanel contentPane;
 	private JTable table;
 
